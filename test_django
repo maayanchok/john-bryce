@@ -1,0 +1,29 @@
+
+def index(request):
+    first_name = request.GET.get("name","no name")
+    your_tz = request.GET.get("tz", "no tz")
+
+    html = f"""<html>
+                <body>
+                <form>
+                <input name='name' value= 'default name'><p>
+                <input name = 'tz'value= 'default tz'>
+                <input type='submit' value = 'press'>
+                </form>"""
+    print(your_tz)
+    if check_tz(your_tz) == True:
+        html += f"""
+            <h1>{first_name} the id is {your_tz}</h1>"""
+    else:
+        html += "<h1>The tz isnt correct, please try again</h1>"
+    html += "</body></html>"
+    return HttpResponse(html)
+
+def check_tz(tz):
+    if tz[0] == "0":
+        tz = tz[1::]
+    if len(tz) != 8:
+        return False
+
+    return True
+    
