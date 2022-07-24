@@ -1,0 +1,20 @@
+<div>
+    {% if access_record %}
+    
+        <table>
+            <thead>
+            <th> Site name</th>
+            <th>date name</th>
+            </thead>
+            {% for acc in access_recored %}
+                <tr>
+                <td> {{ acc.name}}</td>
+                <td> {{ acc.date}}</td>
+                </tr>
+            {%endfor%}
+        </table>
+    {%else%}
+        <p> NO ACCESS RECORDS FUNDE!</P>
+    {%endif%}   
+
+</div>
