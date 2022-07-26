@@ -1,0 +1,14 @@
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8" />
+</head>
+<table>
+    {% for e in data%}
+    <tr>
+        <td>{{e.name}}</td>
+        <td>{{e.date}}</td>
+        <td>{{e.category}}</td>
+        <td>{{e.amount}}</td>
+    </tr>
+    {%endfor%}
+</table>
