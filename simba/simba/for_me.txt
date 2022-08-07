@@ -1,0 +1,15 @@
+user:
+    username
+    first name
+    last name
+    email
+    password
+    birthdate
+    description
+    gender
+
+dog:
+    name
+    birthdate
+    gender
+    race
