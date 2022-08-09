@@ -1,0 +1,21 @@
+user:
+    username
+    first name
+    last name
+    email
+    password
+    birthdate
+    description
+    gender
+
+dog:
+    name
+    birthdate
+    gender
+    race
+
++check which class user to use
++fix message close
++fix redirect adress
++check if username already exist
++check if password match
